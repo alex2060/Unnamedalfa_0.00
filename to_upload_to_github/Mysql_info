@@ -1,0 +1,66 @@
+Documentation
+
+
+there are 4 pages and 10 comands 
+
+
+PATH/add_user_dev.php?uname=Username&hashword=HashWord&email=UserEmail
+	adds user to ledgure. 
+	this user can be used for 3 things
+	Making Posts
+	Making Ledgures
+	Making Templates
+
+
+
+PATH/add_post_dev.php?uname=UserName&hashword=Hashword&tital=&text=&body=&photo=&iframe=&catagoy=&catagoy_2=
+	This is how you make a post
+	You can use the username and hashword from add_user_dev or add_user_ifram
+	once used this will retrun a post id this can be used to get the post
+	put a seach term in catagory
+	And make a post private by adding P yourleddgureame  in the case of get P+yourleddgurename afteer catagory2
+
+
+PATH/get_post_dev.php?key=Postkey&type=Requesttype&cat1=Seachterm&user=Seachuser&usekkey=keyusedforseach
+	Get a post with by puting the post id as key
+	and for type make the type basic where where trem is ued for seaching for posts that match catagory1 where user maches
+	type all will return a serpated set of terms by user of (???)
+	type red will redirect 
+	if post is private it will look for a maching usekkey goten after cashing ledgure
+
+
+
+
+
+
+PATH/add_ledger_dev.php?uname=UserName&hashword=Hashword&Ledgure=LedgureName&password=LedgurePassword&email=Ledgure_Email
+	use the user name and password above along with a leduger name and email emails will be sent to atached ledguremail with infomation about its activity
+
+
+
+
+PATH/add_key_dev.php?uname=LedgureName&password=LedgurePassword&email=ReceiverEmail
+	Ledgurename = UserasoiatedwithLedgure_Ledgurename(form above)
+	it will then be sent to the user email
+
+
+
+PATH/change_key.php?name=KeyName&key=KeySolution&Nkey=NewKey
+	this will change the key in solution and make a new name
+	with a desiredkey solution
+
+
+PATH/check_key.php?name=KeyName
+	will prodive infromation by keyname
+
+
+PATH/rm.php
+	removes keys
+
+
+PATHaddtemplate
+
+
+
+
+
